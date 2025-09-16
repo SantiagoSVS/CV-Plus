@@ -21,8 +21,8 @@
     <!--        app:srcCompat="@drawable/logo" />-->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="141dp"
-        android:layout_height="139dp"
+        android:layout_width="121dp"
+        android:layout_height="130dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:scaleType="fitXY"
