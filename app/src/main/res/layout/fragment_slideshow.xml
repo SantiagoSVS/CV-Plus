@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Deyvid Santiago Prada"
+            android:text="Jhon Doe"
             android:textSize="22sp"
             android:textStyle="bold"
             android:gravity="center"

@@ -6,8 +6,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
+import com.example.cvplus.R
 import com.example.cvplus.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -26,6 +30,13 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val uriImg = "android.resource://${requireContext().packageName}/${R.raw.profile_photo}".toUri()
+        binding.imageProfile.setImageURI(uriImg)
+
+        binding.imageProfile.background = ContextCompat.getDrawable(requireContext(), R.drawable.circle_background)
+        binding.imageProfile.clipToOutline = true // recorta al contorno oval del background
+        binding.imageProfile.scaleType = ImageView.ScaleType.CENTER_CROP
 
         // Configurar los botones
         setupButtons()
