@@ -42,16 +42,6 @@ class HomeFragment : Fragment() {
         setupButtons()
     }
 
-    /*private fun loadProfileData() {
-        val sharedPref = requireActivity().getSharedPreferences(
-            "profile", context.MODE_PRIVATE
-        )
-        binding.etName.setText(sharedPref.getString("name", "Deyvid Santiago Prada Ramos"))
-        binding.etEmail.setText(sharedPref.getString("email", "dprada@poligran.edu.co"))
-        binding.etPhone.setText(sharedPref.getString("phone", "3107125946"))
-        binding.etAddress.setText(sharedPref.getString("address", "Bogotá, Colombia"))
-    }*/
-
     private fun setupButtons() {
         // Botón de contacto (llamada)
         binding.btnContact.setOnClickListener {
