@@ -218,17 +218,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contactar"
-            android:backgroundTint="#3F51B5"
+            android:backgroundTint="#D5D58D"
             android:layout_marginBottom="8dp"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnDownloadCV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Descargar CV"
-            android:backgroundTint="#4CAF50"
-            android:textColor="#FFFFFF"/>
+            android:backgroundTint="#D5D58D"
+            android:textColor="#000000"/>
 
     </LinearLayout>
 </ScrollView>
